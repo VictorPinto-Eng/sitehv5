@@ -43,7 +43,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className={styles.listItemWithIcon}>
                 <Mail size={16} className={styles.icon} />
-                <a href="mailto:contato@hv5.com.br">contato@hv5.com.br</a>
+                <a href="mailto:souhv5@gmail.com">souhv5@gmail.com</a>
               </li>
             </ul>
           </div>

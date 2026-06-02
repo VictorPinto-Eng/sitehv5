@@ -46,7 +46,7 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
             De acordo com a Lei Geral de Proteção de Dados (LGPD), você pode solicitar a qualquer momento a confirmação de existência de tratamento, correção ou exclusão de dados pessoais por meio de nossos canais oficiais:
           </p>
           <ul style={{ paddingLeft: '20px', marginTop: '12px' }}>
-            <li><strong>E-mail do Encarregado de Proteção de Dados (DPO):</strong> <a href="mailto:contato@hv5.com.br" style={{ color: 'var(--primary)' }}>contato@hv5.com.br</a></li>
+            <li><strong>E-mail do Encarregado de Proteção de Dados (DPO):</strong> <a href="mailto:souhv5@gmail.com" style={{ color: 'var(--primary)' }}>souhv5@gmail.com</a></li>
             <li><strong>Telefone Corporativo:</strong> +55 81 99952-9391</li>
           </ul>
         </section>
