@@ -12,7 +12,6 @@ export default function Header() {
         </div>
         
         <nav className={styles.nav}>
-          <a href="#solucoes" className={styles.navLink}>Soluções</a>
           <a href="#sobre" className={styles.navLink}>Sobre</a>
           <a href="#contato" className={styles.navLink}>Contato</a>
         </nav>

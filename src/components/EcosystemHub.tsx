@@ -5,7 +5,7 @@ export default function EcosystemHub() {
   const systems = [
     {
       title: 'HV5 Imóveis',
-      description: 'Plataforma inteligente de compra, venda e locação de imóveis residenciais e comerciais com ferramentas integradas de propostas online.',
+      description: 'Portal inteligente de anúncios imobiliários para busca, compra, venda e locação de imóveis residenciais e comerciais.',
       link: 'https://imoveis.hv5.com.br',
       icon: <Home className={styles.cardIcon} />,
       badge: 'Solução Imobiliária'

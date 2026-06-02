@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
-import EcosystemHub from './components/EcosystemHub';
 import Footer from './components/Footer';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
@@ -72,11 +71,11 @@ function App() {
                 margin: '0 auto 40px auto',
                 lineHeight: 1.6
               }}>
-                O ecossistema HV5 conecta inteligência de mercado imobiliário, sistemas de gestão avançados e automação de leads em uma plataforma robusta.
+                Desenvolvemos tecnologia de ponta, processos eficientes e infraestrutura digital moderna para impulsionar e integrar negócios no ecossistema digital.
               </p>
 
               <a 
-                href="#solucoes"
+                href="#sobre"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -99,13 +98,10 @@ function App() {
                   e.currentTarget.style.transform = 'none';
                 }}
               >
-                Conhecer Soluções <ArrowRight size={16} />
+                Conhecer a HV5 <ArrowRight size={16} />
               </a>
             </div>
           </section>
-
-          {/* Ecosystem Cards Grid */}
-          <EcosystemHub />
 
           {/* About Section for corporate verification */}
           <section id="sobre" style={{ padding: '80px 0 120px 0', borderTop: '1px solid rgba(255, 255, 255, 0.03)' }}>
@@ -121,10 +117,10 @@ function App() {
               }}>Sobre Nós</span>
               <h2 style={{ fontSize: '2rem', marginBottom: '24px', letterSpacing: '-0.02em' }}>HV5 Empreendimentos e Tecnologia</h2>
               <p style={{ color: 'var(--secondary)', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '20px' }}>
-                Fundada com o objetivo de unificar tecnologia, processos digitais inteligentes e mercado de investimentos imobiliários, a TI NET LTDA (HV5) fornece a infraestrutura digital necessária para corretores, incorporadores e parceiros automatizarem e escalarem seus negócios.
+                Fundada com o objetivo de unificar tecnologia, processos digitais inteligentes e mercado de investimentos corporativos, a TI NET LTDA (HV5) fornece a infraestrutura digital necessária para que empresas e parceiros automatizem e escalem suas operações.
               </p>
               <p style={{ color: 'var(--secondary)', fontSize: '1.05rem', lineHeight: 1.7 }}>
-                De portais de busca inteligente com ferramentas de propostas digitais integradas a CRMs avançados e distribuição em tempo real de contatos, nós integramos toda a jornada do ecossistema.
+                De soluções integradas sob medida a plataformas de automação inteligente e conectividade digital, nós fornecemos a base de inovação que seu negócio precisa para crescer de ponta a ponta.
               </p>
             </div>
           </section>

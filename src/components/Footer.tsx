@@ -28,7 +28,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <li><strong>CNPJ:</strong> 06.374.297/0001-31</li>
               <li className={styles.listItemWithIcon}>
                 <MapPin size={16} className={styles.icon} />
-                <span>Avenida Campina Grande, 2227, Sala 01 - Nova Caruaru, Caruaru - PE, CEP 55014-360</span>
+                <span>Avenida Campina Grande, 2227, Sala 01 - Nova Caruaru, Caruaru - PE, CEP 55002-340</span>
               </li>
             </ul>
           </div>

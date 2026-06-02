@@ -30,39 +30,74 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
           Política de Privacidade
         </h1>
         <p style={{ fontSize: '0.9rem', color: '#71717a', marginBottom: '40px' }}>
-          Última atualização: 2 de Junho de 2026
+          Última atualização: 1 de julho de 2025
+        </p>
+
+        <p style={{ marginBottom: '32px' }}>
+          Este documento explica como coletamos, usamos e protegemos seus dados pessoais.
         </p>
 
         <section style={{ marginBottom: '32px' }}>
-          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>1. Quem somos nós?</h2>
-          <p>
-            O portal corporativo do ecossistema HV5 é de propriedade e operado pela <strong>TI NET LTDA</strong>, pessoa jurídica de direito privado, inscrita no CNPJ sob o nº <strong>06.374.297/0001-31</strong>, com sede na Avenida Campina Grande, 2227, Sala 01 - Nova Caruaru, Caruaru - PE, CEP 55014-360.
+          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>📌 Quem somos nós?</h2>
+          <ul style={{ paddingLeft: '20px', marginTop: '12px', listStyleType: 'none', padding: 0 }}>
+            <li style={{ marginBottom: '8px' }}><strong>Nome da Empresa:</strong> TI NET LTDA</li>
+            <li style={{ marginBottom: '8px' }}><strong>CNPJ:</strong> 06.374.297/0001-31</li>
+            <li style={{ marginBottom: '8px' }}><strong>Telefone:</strong> +55 81 99952-9391</li>
+            <li style={{ marginBottom: '8px' }}><strong>E-mail:</strong> <a href="mailto:souhv5@gmail.com" style={{ color: 'var(--primary)' }}>souhv5@gmail.com</a></li>
+          </ul>
+          <p style={{ marginTop: '12px' }}>
+            Somos especializados em serviços de automações empresariais.
           </p>
         </section>
 
         <section style={{ marginBottom: '32px' }}>
-          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>2. Informações de Contato e Dúvidas</h2>
-          <p>
-            De acordo com a Lei Geral de Proteção de Dados (LGPD), você pode solicitar a qualquer momento a confirmação de existência de tratamento, correção ou exclusão de dados pessoais por meio de nossos canais oficiais:
-          </p>
+          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>📌 Quais dados coletamos?</h2>
           <ul style={{ paddingLeft: '20px', marginTop: '12px' }}>
-            <li><strong>E-mail do Encarregado de Proteção de Dados (DPO):</strong> <a href="mailto:souhv5@gmail.com" style={{ color: 'var(--primary)' }}>souhv5@gmail.com</a></li>
-            <li><strong>Telefone Corporativo:</strong> +55 81 99952-9391</li>
+            <li>Nome</li>
+            <li>Telefone</li>
+            <li>E-mail</li>
+            <li>Mensagens via WhatsApp</li>
+            <li>Outras informações fornecidas por você</li>
           </ul>
         </section>
 
         <section style={{ marginBottom: '32px' }}>
-          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>3. Coleta de Dados</h2>
+          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>📌 Para que usamos esses dados?</h2>
+          <ul style={{ paddingLeft: '20px', marginTop: '12px' }}>
+            <li>Responder dúvidas</li>
+            <li>Fornecer serviços</li>
+            <li>Melhorar nosso atendimento</li>
+            <li>Enviar novidades (com permissão)</li>
+          </ul>
+        </section>
+
+        <section style={{ marginBottom: '32px' }}>
+          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>📌 Compartilhamos seus dados?</h2>
           <p>
-            Não coletamos cookies ou dados de navegação invasivos nesta landing page corporativa de redirecionamento. Eventuais coletas de dados são realizadas estritamente de forma explícita e voluntária quando você decide utilizar os formulários específicos ou clicar nas ferramentas do ecossistema (como propostas, leads ou cadastros).
+            Não compartilhamos com terceiros, exceto para cumprir obrigações legais.
           </p>
         </section>
 
         <section style={{ marginBottom: '32px' }}>
-          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>4. Uso dos Dados</h2>
+          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>📌 Como protegemos seus dados?</h2>
           <p>
-            Qualquer informação coletada é utilizada exclusivamente para a prestação de nossos serviços, intermediação imobiliária, suporte corporativo a parceiros e conformidade jurídica. Não vendemos ou compartilhamos informações pessoais com terceiros.
+            Usamos ferramentas seguras e acesso restrito.
           </p>
+        </section>
+
+        <section style={{ marginBottom: '32px' }}>
+          <h2 style={{ fontSize: '1.35rem', color: '#ffffff', marginBottom: '12px' }}>📌 Seus direitos (LGPD):</h2>
+          <p>
+            Você pode solicitar confirmação, correção, exclusão ou revogação do consentimento. Entre em contato conosco pelo WhatsApp ou e-mail.
+          </p>
+          <ul style={{ paddingLeft: '20px', marginTop: '12px', listStyleType: 'none', padding: 0 }}>
+            <li style={{ marginBottom: '8px' }}>
+              <strong>📧 E-mail:</strong> <a href="mailto:souhv5@gmail.com" style={{ color: 'var(--primary)' }}>souhv5@gmail.com</a>
+            </li>
+            <li style={{ marginBottom: '8px' }}>
+              <strong>📱 WhatsApp:</strong> <a href="https://wa.me/5581999529391" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>+55 81 99952-9391</a>
+            </li>
+          </ul>
         </section>
       </article>
     </div>
