@@ -20,7 +20,7 @@ export default function EcosystemHub() {
     {
       title: 'Flowcom',
       description: 'Plataforma inteligente de distribuição, enriquecimento de leads e integrações em tempo real com webhooks externos.',
-      link: 'https://flowcom.hv5.com.br',
+      link: 'https://flow.hv5.com.br',
       icon: <Radio className={styles.cardIcon} />,
       badge: 'Integrações & Leads'
     }

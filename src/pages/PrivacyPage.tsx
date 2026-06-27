@@ -30,7 +30,7 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
           Política de Privacidade
         </h1>
         <p style={{ fontSize: '0.9rem', color: '#71717a', marginBottom: '40px' }}>
-          Última atualização: 1 de julho de 2025
+          Última atualização: 27 de junho de 2025
         </p>
 
         <p style={{ marginBottom: '32px' }}>

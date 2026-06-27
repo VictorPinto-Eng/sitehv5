@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import EcosystemHub from './components/EcosystemHub';
+import CookieConsent from './components/CookieConsent';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import { ArrowRight, Layers } from 'lucide-react';
@@ -14,6 +16,17 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
 
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const customEvent = e as CustomEvent<string>;
+      if (customEvent.detail === 'privacy') {
+        setCurrentPage('privacy');
+      }
+    };
+    window.addEventListener('navigate', handler);
+    return () => window.removeEventListener('navigate', handler);
+  }, []);
+
   const handleNavigate = (page: PageType) => {
     setCurrentPage(page);
   };
@@ -22,15 +35,15 @@ function App() {
     <>
       <div className="glow-bg"></div>
       <Header />
-      
+
       {currentPage === 'home' && (
         <main style={{ flex: 1 }}>
           {/* Hero Section */}
-          <section style={{ 
-            padding: '160px 0 100px 0', 
-            textAlign: 'center', 
+          <section style={{
+            padding: '160px 0 100px 0',
+            textAlign: 'center',
             position: 'relative',
-            zIndex: 2 
+            zIndex: 2
           }}>
             <div className="container">
               <div style={{
@@ -48,12 +61,12 @@ function App() {
                 <Layers size={14} style={{ color: 'var(--primary)' }} />
                 <span>Inovação, Automação & Tecnologia</span>
               </div>
-              
-              <h1 style={{ 
-                fontSize: '3.75rem', 
-                fontWeight: 850, 
-                lineHeight: 1.1, 
-                letterSpacing: '-0.04em', 
+
+              <h1 style={{
+                fontSize: '3.75rem',
+                fontWeight: 850,
+                lineHeight: 1.1,
+                letterSpacing: '-0.04em',
                 marginBottom: '24px',
                 maxWidth: '800px',
                 margin: '0 auto 24px auto',
@@ -63,18 +76,18 @@ function App() {
               }}>
                 Impulsionando negócios através de soluções integradas
               </h1>
-              
-              <p style={{ 
-                fontSize: '1.15rem', 
-                color: 'var(--secondary)', 
-                maxWidth: '600px', 
+
+              <p style={{
+                fontSize: '1.15rem',
+                color: 'var(--secondary)',
+                maxWidth: '600px',
                 margin: '0 auto 40px auto',
                 lineHeight: 1.6
               }}>
                 Desenvolvemos tecnologia de ponta, processos eficientes e infraestrutura digital moderna para impulsionar e integrar negócios no ecossistema digital.
               </p>
 
-              <a 
+              <a
                 href="#sobre"
                 style={{
                   display: 'inline-flex',
@@ -124,6 +137,9 @@ function App() {
               </p>
             </div>
           </section>
+
+          {/* Ecosystem Hub - Soluções */}
+          <EcosystemHub />
         </main>
       )}
 
@@ -136,6 +152,7 @@ function App() {
       )}
 
       <Footer onNavigate={handleNavigate} />
+      <CookieConsent />
     </>
   );
 }
