@@ -1,11 +1,8 @@
 import styles from './Footer.module.css';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-interface FooterProps {
-  onNavigate: (page: 'home' | 'privacy' | 'terms') => void;
-}
-
-export default function Footer({ onNavigate }: FooterProps) {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -55,13 +52,13 @@ export default function Footer({ onNavigate }: FooterProps) {
             &copy; {currentYear} HV5 Ecosystem. Todos os direitos reservados.
           </p>
           <div className={styles.legalLinks}>
-            <button onClick={() => onNavigate('terms')} className={styles.linkButton}>
+            <Link to="/termos" className={styles.linkButton}>
               Termos de Uso
-            </button>
+            </Link>
             <span className={styles.divider}>|</span>
-            <button onClick={() => onNavigate('privacy')} className={styles.linkButton}>
+            <Link to="/privacidade" className={styles.linkButton}>
               Política de Privacidade
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ interface PrivacyPageProps {
 export default function PrivacyPage({ onBack }: PrivacyPageProps) {
   return (
     <div style={{ padding: '120px 0 60px 0', maxWidth: '800px', margin: '0 auto', width: '90%' }}>
-      <button 
+      <button
         onClick={onBack}
         style={{
           background: 'none',
@@ -30,7 +30,7 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
           Política de Privacidade
         </h1>
         <p style={{ fontSize: '0.9rem', color: '#71717a', marginBottom: '40px' }}>
-          Última atualização: 27 de junho de 2025
+          Última atualização: 9 de abril de 2026
         </p>
 
         <p style={{ marginBottom: '32px' }}>
