@@ -1,5 +1,5 @@
 import styles from './EcosystemHub.module.css';
-import { Home, Settings, Radio, ArrowUpRight } from 'lucide-react';
+import { Home, Radio, ArrowUpRight } from 'lucide-react';
 
 export default function EcosystemHub() {
   const systems = [
@@ -10,13 +10,14 @@ export default function EcosystemHub() {
       icon: <Home className={styles.cardIcon} />,
       badge: 'Solução Imobiliária'
     },
-    {
-      title: 'HV5 Soft',
-      description: 'Sistemas corporativos completos de gestão, automações de backoffice e CRM imobiliário avançado sob medida para o seu negócio.',
-      link: 'https://soft.hv5.com.br',
-      icon: <Settings className={styles.cardIcon} />,
-      badge: 'Tecnologia & CRM'
-    },
+    // HV5 Soft - desativado temporariamente
+    // {
+    //   title: 'HV5 Soft',
+    //   description: 'Sistemas corporativos completos de gestão, automações de backoffice e CRM imobiliário avançado sob medida para o seu negócio.',
+    //   link: 'https://soft.hv5.com.br',
+    //   icon: <Settings className={styles.cardIcon} />,
+    //   badge: 'Tecnologia & CRM'
+    // },
     {
       title: 'Flowcom',
       description: 'Plataforma inteligente de distribuição, enriquecimento de leads e integrações em tempo real com webhooks externos.',
