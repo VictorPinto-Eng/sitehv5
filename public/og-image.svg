@@ -9,6 +9,7 @@
       <stop offset="100%" style="stop-color:#a855f7"/>
     </linearGradient>
   </defs>
+  <rect width="1200" height="630" fill="#0a0a0b"/>
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="0" y="610" width="1200" height="20" fill="url(#accent)"/>
   <!-- Logo icon -->
